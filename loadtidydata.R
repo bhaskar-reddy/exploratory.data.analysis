@@ -1,3 +1,9 @@
+## Common code used for all four plots is contained in this common file. It 
+## performs the following common functions :
+##      1. Download data ("household_power_consumption.zip") from cloudfront site
+##      2. Unzip as "household_power_consumption.txt" file
+##      3. Load the filtered data for dates '2007-02-01' and '2007-02-02'
+
 loadtidydata <- function() {
         
         ## if file does not exist, download file from the cloudfront site
